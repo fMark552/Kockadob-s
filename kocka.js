@@ -56,6 +56,9 @@ var kocka4=true
 var szamlalo5=0
 var kocka5=true
 
+var szum1 = 0
+var szum2 = 0 
+
 var listahelye1=document.getElementById("listahelye1")
 var listahelye2=document.getElementById("listahelye2")
 
@@ -378,7 +381,7 @@ function kovetkezo()
     if(kocka1==false)
     {
         alap1.style.visibility="hidden"
-        //alap1.parentNode.remvoeChild(alap1)
+        //alap1.parentNode.removeChild(alap1)
     }
     if(kocka2==false)
     {
@@ -422,15 +425,6 @@ bezar2.onclick = function()
     next.style.display = "none"
 }
 
-function lista1()
-{
-    listahelye1.innerHTML=jatekoslista
-}
-
-
-
-// GÉP KÖRE RÉSZ
-
 function gep()
 {
     alap1.src="one.png"
@@ -447,6 +441,7 @@ function gepdobasharmadik()
     if(gepdobasszamlalo>=1)
     {
         nextgame.disabled=true
+        dobasharom3.disabled=true
     }
 }
 
@@ -860,20 +855,11 @@ function gepdobas5()
     }  
 }
 
-function lista2()
-{
-    listahelye2.innerHTML=geplista
-}
-
-var szum1 = 0
-var szum2 = 0 
-
 function SUM1()
 {
-    let i = -1
-    while (++i < jatekoslista.length) 
+    for (var i = 0; i < jatekoslista.length; i++) 
     {
-        szum1 += jatekoslista[i]
+        szum1 += jatekoslista[i];
     }
     console.log(szum1)
 }
@@ -898,4 +884,14 @@ function eredmeny()
     {
         alert("A GÉP NYERT!")
     }
+}
+
+function lista1()
+{
+    listahelye1.innerHTML=szum1
+}
+
+function lista2()
+{
+    listahelye2.innerHTML=szum2
 }
