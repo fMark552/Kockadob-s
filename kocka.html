@@ -28,9 +28,11 @@
             <button class="btn p-3 mb-2 bg-light text-dark" id="kocka5" onclick="otos()">5. KOCKA</button>
         </div>
         <div id="buttonbox2">
-            <!-- <button onclick="lista1()">lista1</button>
-            <button onclick="lista2()">lista2</button> -->
-            <button id="dobas" class="btn p-3 mb-2 bg-dark text-light" onclick="onkor(), kockadobas1(), kockadobas2(), kockadobas3(), kockadobas4(), kockadobas5(), kovetkezo(), dobas3()">DOBÁS</button>
+            <button onclick="lista1()">lista1</button>
+            <button onclick="lista2()">lista2</button>
+            <button onclick="SUM1()">SUM 1</button>
+            <button onclick="SUM2()">SUM 2</button>
+            <button id="dobas" class="btn p-3 mb-2 bg-dark text-light" onclick="onkor(), kockadobas1(), kockadobas2(), kockadobas3(), kockadobas4(), kockadobas5(), kovetkezo(), dobasHAROM()">DOBÁS</button>
             <button id="nextgame" class="btn p-3 mb-2 bg-dark text-light">KÖR VÉGE</button>
             <button id="newgame" class="btn p-3 mb-2 bg-dark text-light">ÚJ JÁTÉK</button>
         </div>
@@ -42,11 +44,11 @@
         <div class="form-popup" id="myForm">
           <form class="form-container">
             <p>1. ELŐSZÖR DOBJON MIND AZ 5 KOCKÁVAL, A 'DOBÁS' GOMB SEGÍTSÉGÉVEL.</p>
-            <P>2. MAJD VÁLASSZA KI AZOKAT A KOCKÁKAT A SZÁMOZOTT GOMBOK SEGÍTSÉGÉVEL AMELYEKET <span id="kiemel">NEM</span> AKAR ÚJRA DOBNI.</P>
-            <p>3. EZUTÁN ISMÉT NYOMJA MEG A 'DOBÁS' GOMBOT.</p>
+            <P>2. MAJD VÁLASSZA KI AZOKAT A KOCKÁKAT A SZÁMOZOTT GOMBOK SEGÍTSÉGÉVEL AMELYEKET <span id="kiemel">NEM</span> AKAR ÚJRA DOBNI. A JÁTÉK CSAK AKKOR MENTI EL A KOCKÁK ÉRTÉKÉT, HA KIVÁLASZTOTTA A MEGFELŐ SZÁMOZOTT GOMBBAL.</P>
+            <p>3. HA NEM ELÉGEDETT A DOBÁS EREDMÉNYÉVEL, ISMÉT NYOMJA MEG A 'DOBÁS' GOMBOT.</p>
             <P>4. ISMÉTELJE MEG A 2. ÉS 3. LÉPÉSEKET, HA MÉG MINDIG VAN OLYAN KOCKA AMIVEL ÚJRA SZERETNE DOBNI.</P>
-            <P>5. ÖSSZESEN 3X DOBHAT A KOCKÁKKAL.</P>
-            <P>6. MIUTÁN 3X DOBOTT VAGY NEM SZERETNE TÖBBET DOBNI, NYOMJA MEG A KÖR VÉGE GOMBOT. EZZEL ÁTADJA A KÖRT A GÉPNEK, AMI AUTOMATIKUSAN ELVÉGZI A DOBÁSOKAT.</P>
+            <P>5. LEGFELJEBB 3X DOBHAT A KOCKÁKKAL.</P>
+            <P>6. MIUTÁN 3X DOBOTT VAGY 3-NÁL KEVESEBBSZER DOBOTT, DE NEM SZERETNE TÖBBET DOBNI, GYŐZŐDJÖN MEG RÓLA, HOGY AZ ÖSSZES KOCKÁT KIVÁLASZTOTTA A MEGFELELŐ SZÁMOZOTT GOMBBAL ÉS UTÁNNA NYOMJA MEG A KÖR VÉGE GOMBOT. EZZEL ÁTADJA A KÖRT A GÉPNEK, AMI AUTOMATIKUSAN ELVÉGZI A DOBÁSAIT.</P>
             <p>7. A JÁTÉKOT AZ A FÉL NYERI AKINÉL A KOCKÁK ÉRTÉKÉNEK ÖSSZEGE NAGYOBB.</p>
 
             <button class="btn cancel" onclick="szabalybezar()">BEZÁRÁS</button>
@@ -75,16 +77,12 @@
                 <p>BIZTOSAN SZERETNÉ BEFEJEZNI A KÖRÉT?</p>
             </div>
             <div class="modal-footer">
-                <button class="close4 btn p-3 mb-2 bg-dark text-light" data-dismiss="modal" onclick="gepkor(), gepdobas1(), gepdobas2(), gepdobas3(), gepdobas4(), gepdobas5(), gepdobasharmadik()">IGEN</button>
+                <button class="close4 btn p-3 mb-2 bg-dark text-light" data-dismiss="modal" onclick="gepkor(), gepdobas1(), gepdobas2(), gepdobas3(), gepdobas4(), gepdobas5(), gepdobasharmadik(), mentes(), eredmeny()">IGEN</button>
                 <button class="close2 btn p-3 mb-2 bg-dark text-light" data-dismiss="modal">NEM</button>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 </body>
 <script src="kocka.js"></script>
 </html>

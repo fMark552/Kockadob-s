@@ -60,11 +60,8 @@ ul{
     font-family: Arial;
 }
 #kiemel{
-    color: red;
+  color: red;
 }
-
-
-/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: white;
   color: black;
@@ -72,14 +69,11 @@ ul{
   border: none;
   border-radius: 7px;
   cursor: pointer;
-  
   position: fixed;
   bottom: 23px;
   right: 28px;
   width: 280px;
 }
-
-/* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
@@ -88,17 +82,11 @@ ul{
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
-
-/* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  max-width: 500px;
   padding: 10px;
   background-color: white;
 }
-
-
-
-/* Set a style for the submit/login button */
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
@@ -108,11 +96,9 @@ ul{
   width: 100%;
   margin-bottom:10px;
 }
-
 .form-container .cancel {
   background-color: darkgreen;
 }
-
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }

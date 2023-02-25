@@ -1,8 +1,19 @@
-var dobas
+var dobas1
+var dobas2
+var dobas3
+var dobas4
+var dobas5
+
+var dobas6
+var dobas7
+var dobas8
+var dobas9
+var dobas10
+
 const max=6
 var gombszam=0
 
-var dobasharom=document.getElementById("dobas")
+var dobasharom3=document.getElementById("dobas")
 var dobasszamlalo=0
 
 var ide=document.getElementById("ide")
@@ -58,13 +69,13 @@ function szabalybezar()
     document.getElementById("myForm").style.display = "none";
 }
 
-function dobas3()
+function dobasHAROM()
 {
     dobasszamlalo++
 
     if(dobasszamlalo>=3)
     {
-        dobasharom.disabled=true
+        dobasharom3.disabled=true
     }
 }
 
@@ -170,31 +181,33 @@ function otos()
 
 function kockadobas1()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    jatekoslista.push(dobas)
+    if(kocka1==true)
+    {
+        dobas1=Math.floor(Math.random()*max+1)
+        console.log(dobas1)
+    }
 
-    if(dobas==1)
+    if(dobas1==1)
     {
         alap1.src="egy.png"
     }
-    if(dobas==2)
+    if(dobas1==2)
     {
         alap1.src="ketto.png"
     }
-    if(dobas==3)
+    if(dobas1==3)
     {
         alap1.src="harom.png"
     }
-    if(dobas==4)
+    if(dobas1==4)
     {
         alap1.src="negy.png"
     }
-    if(dobas==5)
+    if(dobas1==5)
     {
         alap1.src="ot.png"
     }
-    if(dobas==6)
+    if(dobas1==6)
     {
         alap1.src="hat.png"
     }
@@ -202,31 +215,33 @@ function kockadobas1()
 
 function kockadobas2()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    jatekoslista.push(dobas)
+    if(kocka2==true)
+    {
+        dobas2=Math.floor(Math.random()*max+1)
+        console.log(dobas2)
+    }
 
-    if(dobas==1)
+    if(dobas2==1)
     {
         alap2.src="egy.png"
     }
-    if(dobas==2)
+    if(dobas2==2)
     {
         alap2.src="ketto.png"
     }
-    if(dobas==3)
+    if(dobas2==3)
     {
         alap2.src="harom.png"
     }
-    if(dobas==4)
+    if(dobas2==4)
     {
         alap2.src="negy.png"
     }
-    if(dobas==5)
+    if(dobas2==5)
     {
         alap2.src="ot.png"
     }
-    if(dobas==6)
+    if(dobas2==6)
     {
         alap2.src="hat.png"
     }
@@ -234,31 +249,33 @@ function kockadobas2()
 
 function kockadobas3()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    jatekoslista.push(dobas)
+    if(kocka3==true)
+    {
+        dobas3=Math.floor(Math.random()*max+1)
+        console.log(dobas3)
+    }
 
-    if(dobas==1)
+    if(dobas3==1)
     {
         alap3.src="egy.png"
     }
-    if(dobas==2)
+    if(dobas3==2)
     {
         alap3.src="ketto.png"
     }
-    if(dobas==3)
+    if(dobas3==3)
     {
         alap3.src="harom.png"
     }
-    if(dobas==4)
+    if(dobas3==4)
     {
         alap3.src="negy.png"
     }
-    if(dobas==5)
+    if(dobas3==5)
     {
         alap3.src="ot.png"
     }
-    if(dobas==6)
+    if(dobas3==6)
     {
         alap3.src="hat.png"
     }
@@ -266,31 +283,33 @@ function kockadobas3()
 
 function kockadobas4()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    jatekoslista.push(dobas)
+    if(kocka4==true)
+    {
+        dobas4=Math.floor(Math.random()*max+1)
+        console.log(dobas4)
+    }
 
-    if(dobas==1)
+    if(dobas4==1)
     {
         alap4.src="egy.png"
     }
-    if(dobas==2)
+    if(dobas4==2)
     {
         alap4.src="ketto.png"
     }
-    if(dobas==3)
+    if(dobas4==3)
     {
         alap4.src="harom.png"
     }
-    if(dobas==4)
+    if(dobas4==4)
     {
         alap4.src="negy.png"
     }
-    if(dobas==5)
+    if(dobas4==5)
     {
         alap4.src="ot.png"
     }
-    if(dobas==6)
+    if(dobas4==6)
     {
         alap4.src="hat.png"
     }
@@ -298,34 +317,60 @@ function kockadobas4()
 
 function kockadobas5()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    jatekoslista.push(dobas)
+    if(kocka5==true)
+    {
+        dobas5=Math.floor(Math.random()*max+1)
+        console.log(dobas5)
+    }
 
-    if(dobas==1)
+    if(dobas5==1)
     {
         alap5.src="egy.png"
     }
-    if(dobas==2)
+    if(dobas5==2)
     {
         alap5.src="ketto.png"
     }
-    if(dobas==3)
+    if(dobas5==3)
     {
         alap5.src="harom.png"
     }
-    if(dobas==4)
+    if(dobas5==4)
     {
         alap5.src="negy.png"
     }
-    if(dobas==5)
+    if(dobas5==5)
     {
         alap5.src="ot.png"
     }
-    if(dobas==6)
+    if(dobas5==6)
     {
         alap5.src="hat.png"
     }  
+}
+
+function mentes()
+{
+    if(kocka1==false)
+    {
+        jatekoslista.push(dobas1)
+    }
+    if(kocka2==false)
+    {
+        jatekoslista.push(dobas2)
+    }
+    if(kocka3==false)
+    {
+        jatekoslista.push(dobas3)
+    }
+    if(kocka4==false)
+    {
+        jatekoslista.push(dobas4)
+    }
+    if(kocka5==false)
+    {
+        jatekoslista.push(dobas5)
+    }
 }
 
 function kovetkezo()
@@ -407,72 +452,81 @@ function gepdobasharmadik()
 
 function gepdobas1()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    geplista.push(dobas)
+    dobas6=Math.floor(Math.random()*max+1)
+    console.log(dobas6)
     alap1.style.visibility="visible"
 
-    if(dobas==4)
+    if(dobas6==4)
     {
         alap1.src="four.png"
+        geplista.push(dobas6)
     }
-    if(dobas==5)
+    if(dobas6==5)
     {
         alap1.src="five.png"
+        geplista.push(dobas6)
     }
-    if(dobas==6)
+    if(dobas6==6)
     {
         alap1.src="six.png"
+        geplista.push(dobas6)
     }  
 
-    if(dobas<4)
+    if(dobas6<4)
     {
-        dobas=Math.floor(Math.random()*max+1)
-        console.log(dobas)
-        geplista.push(dobas)
+        dobas6=Math.floor(Math.random()*max+1)
+        console.log(dobas6)
 
-        if(dobas==4)
+        if(dobas6==4)
         {
             alap1.src="four.png"
+            geplista.push(dobas6)
         }
-        if(dobas==5)
+        if(dobas6==5)
         {
             alap1.src="five.png"
+            geplista.push(dobas6)
         }
-        if(dobas==6)
+        if(dobas6==6)
         {
             alap1.src="six.png"
+            geplista.push(dobas6)
         } 
 
-        if(dobas<4)
+        if(dobas6<4)
         {
-            dobas=Math.floor(Math.random()*max+1)
-            console.log(dobas)
-            geplista.push(dobas)
+            dobas6=Math.floor(Math.random()*max+1)
+            console.log(dobas6)
 
-            if(dobas==1)
+            if(dobas6==1)
             {
                 alap1.src="one.png"
+                geplista.push(dobas6)
             }
-            if(dobas==2)
+            if(dobas6==2)
             {
                 alap1.src="two.png"
+                geplista.push(dobas6)
             }
-            if(dobas==3)
+            if(dobas6==3)
             {
                 alap1.src="three.png"
+                geplista.push(dobas6)
             }
-            if(dobas==4)
+            if(dobas6==4)
             {
                 alap1.src="four.png"
+                geplista.push(dobas6)
             }
-            if(dobas==5)
+            if(dobas6==5)
             {
                 alap1.src="five.png"
+                geplista.push(dobas6)
             }
-            if(dobas==6)
+            if(dobas6==6)
             {
                 alap1.src="six.png"
+                geplista.push(dobas6)
             } 
         }
     }
@@ -480,72 +534,81 @@ function gepdobas1()
 
 function gepdobas2()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    geplista.push(dobas)
+    dobas7=Math.floor(Math.random()*max+1)
+    console.log(dobas7)
     alap2.style.visibility="visible"
 
-    if(dobas==4)
+    if(dobas7==4)
     {
         alap2.src="four.png"
+        geplista.push(dobas7)
     }
-    if(dobas==5)
+    if(dobas7==5)
     {
         alap2.src="five.png"
+        geplista.push(dobas7)
     }
-    if(dobas==6)
+    if(dobas7==6)
     {
         alap2.src="six.png"
+        geplista.push(dobas7)
     }  
 
-    if(dobas<4)
+    if(dobas7<4)
     {
-        dobas=Math.floor(Math.random()*max+1)
-        console.log(dobas)
-        geplista.push(dobas)
+        dobas7=Math.floor(Math.random()*max+1)
+        console.log(dobas7)
 
-        if(dobas==4)
+        if(dobas7==4)
         {
             alap2.src="four.png"
+            geplista.push(dobas7)
         }
-        if(dobas==5)
+        if(dobas7==5)
         {
             alap2.src="five.png"
+            geplista.push(dobas7)
         }
-        if(dobas==6)
+        if(dobas7==6)
         {
             alap2.src="six.png"
+            geplista.push(dobas7)
         } 
 
-        if(dobas<4)
+        if(dobas7<4)
         {
-            dobas=Math.floor(Math.random()*max+1)
-            console.log(dobas)
-            geplista.push(dobas)
+            dobas7=Math.floor(Math.random()*max+1)
+            console.log(dobas7)
 
-            if(dobas==1)
+            if(dobas7==1)
             {
                 alap2.src="one.png"
+                geplista.push(dobas7)
             }
-            if(dobas==2)
+            if(dobas7==2)
             {
                 alap2.src="two.png"
+                geplista.push(dobas7)
             }
-            if(dobas==3)
+            if(dobas7==3)
             {
                 alap2.src="three.png"
+                geplista.push(dobas7)
             }
-            if(dobas==4)
+            if(dobas7==4)
             {
                 alap2.src="four.png"
+                geplista.push(dobas7)
             }
-            if(dobas==5)
+            if(dobas7==5)
             {
                 alap2.src="five.png"
+                geplista.push(dobas7)
             }
-            if(dobas==6)
+            if(dobas7==6)
             {
                 alap2.src="six.png"
+                geplista.push(dobas7)
             } 
         }
     } 
@@ -553,72 +616,81 @@ function gepdobas2()
 
 function gepdobas3()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    geplista.push(dobas)
+    dobas8=Math.floor(Math.random()*max+1)
+    console.log(dobas8)
     alap3.style.visibility="visible"
 
-    if(dobas==4)
+    if(dobas8==4)
     {
         alap3.src="four.png"
+        geplista.push(dobas8)
     }
-    if(dobas==5)
+    if(dobas8==5)
     {
         alap3.src="five.png"
+        geplista.push(dobas8)
     }
-    if(dobas==6)
+    if(dobas8==6)
     {
         alap3.src="six.png"
+        geplista.push(dobas8)
     }  
 
-    if(dobas<4)
+    if(dobas8<4)
     {
-        dobas=Math.floor(Math.random()*max+1)
-        console.log(dobas)
-        geplista.push(dobas)
+        dobas8=Math.floor(Math.random()*max+1)
+        console.log(dobas8)
 
-        if(dobas==4)
+        if(dobas8==4)
         {
             alap3.src="four.png"
+            geplista.push(dobas8)
         }
-        if(dobas==5)
+        if(dobas8==5)
         {
             alap3.src="five.png"
+            geplista.push(dobas8)
         }
-        if(dobas==6)
+        if(dobas8==6)
         {
             alap3.src="six.png"
+            geplista.push(dobas8)
         } 
 
-        if(dobas<4)
+        if(dobas8<4)
         {
-            dobas=Math.floor(Math.random()*max+1)
-            console.log(dobas)
-            geplista.push(dobas)
+            dobas8=Math.floor(Math.random()*max+1)
+            console.log(dobas8)
 
-            if(dobas==1)
+            if(dobas8==1)
             {
                 alap3.src="one.png"
+                geplista.push(dobas8)
             }
-            if(dobas==2)
+            if(dobas8==2)
             {
                 alap3.src="two.png"
+                geplista.push(dobas8)
             }
-            if(dobas==3)
+            if(dobas8==3)
             {
                 alap3.src="three.png"
+                geplista.push(dobas8)
             }
-            if(dobas==4)
+            if(dobas8==4)
             {
                 alap3.src="four.png"
+                geplista.push(dobas8)
             }
-            if(dobas==5)
+            if(dobas8==5)
             {
                 alap3.src="five.png"
+                geplista.push(dobas8)
             }
-            if(dobas==6)
+            if(dobas8==6)
             {
                 alap3.src="six.png"
+                geplista.push(dobas8)
             } 
         }
     } 
@@ -626,72 +698,81 @@ function gepdobas3()
 
 function gepdobas4()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    geplista.push(dobas)
+    dobas9=Math.floor(Math.random()*max+1)
+    console.log(dobas9)
     alap4.style.visibility="visible"
 
-    if(dobas==4)
+    if(dobas9==4)
     {
         alap4.src="four.png"
+        geplista.push(dobas9)
     }
-    if(dobas==5)
+    if(dobas9==5)
     {
         alap4.src="five.png"
+        geplista.push(dobas9)
     }
-    if(dobas==6)
+    if(dobas9==6)
     {
         alap4.src="six.png"
+        geplista.push(dobas9)
     }  
 
-    if(dobas<4)
+    if(dobas9<4)
     {
-        dobas=Math.floor(Math.random()*max+1)
-        console.log(dobas)
-        geplista.push(dobas)
+        dobas9=Math.floor(Math.random()*max+1)
+        console.log(dobas9)
 
-        if(dobas==4)
+        if(dobas9==4)
         {
             alap4.src="four.png"
+            geplista.push(dobas9)
         }
-        if(dobas==5)
+        if(dobas9==5)
         {
             alap4.src="five.png"
+            geplista.push(dobas9)
         }
-        if(dobas==6)
+        if(dobas9==6)
         {
             alap4.src="six.png"
+            geplista.push(dobas9)
         } 
 
-        if(dobas<4)
+        if(dobas9<4)
         {
-            dobas=Math.floor(Math.random()*max+1)
-            console.log(dobas)
-            geplista.push(dobas)
+            dobas9=Math.floor(Math.random()*max+1)
+            console.log(dobas9)
 
-            if(dobas==1)
+            if(dobas9==1)
             {
                 alap4.src="one.png"
+                geplista.push(dobas9)
             }
-            if(dobas==2)
+            if(dobas9==2)
             {
                 alap4.src="two.png"
+                geplista.push(dobas9)
             }
-            if(dobas==3)
+            if(dobas9==3)
             {
                 alap4.src="three.png"
+                geplista.push(dobas9)
             }
-            if(dobas==4)
+            if(dobas9==4)
             {
                 alap4.src="four.png"
+                geplista.push(dobas9)
             }
-            if(dobas==5)
+            if(dobas9==5)
             {
                 alap4.src="five.png"
+                geplista.push(dobas9)
             }
-            if(dobas==6)
+            if(dobas9==6)
             {
                 alap4.src="six.png"
+                geplista.push(dobas9)
             } 
         }
     }
@@ -699,72 +780,81 @@ function gepdobas4()
 
 function gepdobas5()
 {
-    dobas=Math.floor(Math.random()*max+1)
-    console.log(dobas)
-    geplista.push(dobas)
+    dobas10=Math.floor(Math.random()*max+1)
+    console.log(dobas10)
     alap5.style.visibility="visible"
 
-    if(dobas==4)
+    if(dobas10==4)
     {
         alap5.src="four.png"
+        geplista.push(dobas10)
     }
-    if(dobas==5)
+    if(dobas10==5)
     {
         alap5.src="five.png"
+        geplista.push(dobas10)
     }
-    if(dobas==6)
+    if(dobas10==6)
     {
         alap5.src="six.png"
+        geplista.push(dobas10)
     }  
 
-    if(dobas<4)
+    if(dobas10<4)
     {
-        dobas=Math.floor(Math.random()*max+1)
-        console.log(dobas)
-        geplista.push(dobas)
+        dobas10=Math.floor(Math.random()*max+1)
+        console.log(dobas10)
 
-        if(dobas==4)
+        if(dobas10==4)
         {
             alap5.src="four.png"
+            geplista.push(dobas10)
         }
-        if(dobas==5)
+        if(dobas10==5)
         {
             alap5.src="five.png"
+            geplista.push(dobas10)
         }
-        if(dobas==6)
+        if(dobas10==6)
         {
             alap5.src="six.png"
+            geplista.push(dobas10)
         } 
 
-        if(dobas<4)
+        if(dobas10<4)
         {
-            dobas=Math.floor(Math.random()*max+1)
-            console.log(dobas)
-            geplista.push(dobas)
+            dobas10=Math.floor(Math.random()*max+1)
+            console.log(dobas10)
 
-            if(dobas==1)
+            if(dobas10==1)
             {
                 alap5.src="one.png"
+                geplista.push(dobas10)
             }
-            if(dobas==2)
+            if(dobas10==2)
             {
                 alap5.src="two.png"
+                geplista.push(dobas10)
             }
-            if(dobas==3)
+            if(dobas10==3)
             {
                 alap5.src="three.png"
+                geplista.push(dobas10)
             }
-            if(dobas==4)
+            if(dobas10==4)
             {
                 alap5.src="four.png"
+                geplista.push(dobas10)
             }
-            if(dobas==5)
+            if(dobas10==5)
             {
                 alap5.src="five.png"
+                geplista.push(dobas10)
             }
-            if(dobas==6)
+            if(dobas10==6)
             {
                 alap5.src="six.png"
+                geplista.push(dobas10)
             } 
         }
     }  
@@ -775,3 +865,37 @@ function lista2()
     listahelye2.innerHTML=geplista
 }
 
+var szum1 = 0
+var szum2 = 0 
+
+function SUM1()
+{
+    let i = -1
+    while (++i < jatekoslista.length) 
+    {
+        szum1 += jatekoslista[i]
+    }
+    console.log(szum1)
+}
+
+function SUM2()
+{ 
+    let i = -1
+    while (++i < geplista.length) 
+    {
+        szum2 += geplista[i]
+    }
+    console.log(szum2)
+}
+
+function eredmeny()
+{
+    if(szum1 > szum2)
+    {
+        alert("ÖN NYERT!")
+    }
+    else
+    {
+        alert("A GÉP NYERT!")
+    }
+}
